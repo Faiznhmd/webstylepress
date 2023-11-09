@@ -4,6 +4,10 @@ body {
 a {
   text-decoration: none;
 }
+.nav {
+  display: flex;
+  gap: 15px;
+}
 
 /* home */
 
@@ -140,4 +144,17 @@ main .pg-header h1 {
 }
 .single .price strong {
   color: #0d6efd;
+}
+
+/* post */
+
+.posts .col-sm-6 {
+  margin-bottom: 20px;
+}
+.posts .card-title {
+  text-transform: capitalize;
+}
+
+.posts .card-text {
+  text-align: center;
 }
