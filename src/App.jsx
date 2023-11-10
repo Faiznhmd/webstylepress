@@ -1,8 +1,9 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Header from './components/Header';
-import Footer from './components/Footer';
+import MainLayout from './pages/MainLayout';
+// import Header from './components/Header';
+// import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import Products from './pages/Products';
@@ -16,16 +17,18 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Header />
+        {/* <Header /> */}
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="product" element={<Products />} />
-          <Route path="product/:productID" element={<SingleProducts />} />
-          <Route path="posts" element={<Posts />} />
-          <Route path="*" element={<Error />} />
+          <Route path="/" element={<MainLayout />}>
+            <Route index element={<Home />} />
+            <Route path="about" element={<About />} />
+            <Route path="product" element={<Products />} />
+            <Route path="product/:productID" element={<SingleProducts />} />
+            <Route path="posts" element={<Posts />} />
+            <Route path="*" element={<Error />} />
+          </Route>
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </BrowserRouter>
     </div>
   );

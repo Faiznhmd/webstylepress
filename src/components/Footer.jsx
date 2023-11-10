@@ -5,13 +5,45 @@ const Footer = () => {
     <footer className="footer">
       <div className="container">
         <nav className="d-flex justify-content-center">
-          <div className="nav nav-pills">
-            <Link to="/">Home</Link>
-            <Link to="about">About</Link>
-            <Link to="product">Products</Link>
-            <Link to="posts">Posts</Link>
-          </div>
+          <NavLink
+            to="/"
+            className={(navData) =>
+              navData.isActive ? 'nav-link active' : 'nav-link'
+            }
+          >
+            Home
+          </NavLink>
+
+          <NavLink
+            to="about"
+            className={(navData) =>
+              navData.isActive ? 'nav-link active' : 'nav-link'
+            }
+          >
+            About
+          </NavLink>
+
+          <NavLink
+            to="product"
+            className={(navData) =>
+              navData.isActive ? 'nav-link active' : 'nav-link'
+            }
+          >
+            Products
+          </NavLink>
+
+          <NavLink
+            to="posts"
+            className={(navData) =>
+              navData.isActive ? 'nav-link active' : 'nav-link'
+            }
+          >
+            Posts
+          </NavLink>
         </nav>
+        <div className="copyrghts">
+          &copy;2022 <Link to="/"> WebstylePress</Link> All Rights Reserved
+        </div>
       </div>
     </footer>
   );

@@ -158,3 +158,77 @@ main .pg-header h1 {
 .posts .card-text {
   text-align: center;
 }
+
+/* header */
+header {
+  padding: 20px 0;
+  background-color: #000;
+}
+header .logo {
+  transform: rotate(-6deg);
+  transition: all 0.3s ease;
+}
+
+header .logo:hover {
+  transform: rotate(8deg);
+}
+header .brand {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 700;
+  background-color: #2d2d2d;
+  border-radius: 40px;
+  border-bottom: 2px sold #6294de;
+  text-shadow: 2px 2px 0px #000;
+}
+
+header .nav-link {
+  font-weight: 700;
+  color: #999;
+  border-radius: 0;
+  font-size: 14px;
+}
+header .nav-link:hover {
+  color: #fff;
+}
+
+/* footer */
+
+footer {
+  padding: 40px 0 100px 0;
+}
+footer .nav-link {
+  color: rgba(255, 255, 255, 0.75);
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0 10px;
+}
+footer .nav-link:hover {
+  color: #fff;
+}
+footer .nav-link.active {
+  color: #fff;
+  border-bottom: 1px solid #666;
+}
+
+footer .copyrghts {
+  color: rgba(255, 255, 255, 0.75);
+  text-align: center;
+  margin-top: 10px;
+}
+
+footer .copyrghts a {
+  color: rgba(255, 255, 255, 75);
+}
+
+footer .copyrghts a:hover {
+  color: #fff;
+}
+
+ol {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  font-weight: 600;
+  font-size: 15px;
+}

@@ -10,12 +10,43 @@ const Header = () => {
               WSP
             </Link>
           </div>
-          <div className="nav nav-pills">
-            <Link to="/">Home</Link>
-            <Link to="about">About</Link>
-            <Link to="product">Products</Link>
-            <Link to="posts">Posts</Link>
-          </div>
+          <nav className="nav nav-pills">
+            <NavLink
+              to="/"
+              className={(navData) =>
+                navData.isActive ? 'nav-link active' : 'nav-link'
+              }
+            >
+              Home
+            </NavLink>
+
+            <NavLink
+              to="about"
+              className={(navData) =>
+                navData.isActive ? 'nav-link active' : 'nav-link'
+              }
+            >
+              About
+            </NavLink>
+
+            <NavLink
+              to="product"
+              className={(navData) =>
+                navData.isActive ? 'nav-link active' : 'nav-link'
+              }
+            >
+              Products
+            </NavLink>
+
+            <NavLink
+              to="posts"
+              className={(navData) =>
+                navData.isActive ? 'nav-link active' : 'nav-link'
+              }
+            >
+              Posts
+            </NavLink>
+          </nav>
         </div>
       </div>
     </header>
