@@ -37,8 +37,7 @@ const Products = () => {
                     <p className="card-text">{product.details}</p>
                     <div className="d-flex justify-content-between align-items-center">
                       <span>
-                        {' '}
-                        Price :{' '}
+                        Price :
                         <strong className="price">{product.price}</strong>
                       </span>
                       <Link
